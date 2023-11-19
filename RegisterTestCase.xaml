@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="RegisterTestCase" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="602,2680" sap2010:WorkflowViewState.IdRef="RegisterTestCase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="RegisterTestCase" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="602,5310" sap2010:WorkflowViewState.IdRef="RegisterTestCase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>GlobalConstantsNamespace</x:String>
@@ -102,43 +102,43 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RegisterTestCase" sap:VirtualizedContainerService.HintSize="546,2615" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RegisterTestCase" sap:VirtualizedContainerService.HintSize="546,5245" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,2504" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Jobs Today - Register as an Employer" sap:VirtualizedContainerService.HintSize="484,5134" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2287" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,4917" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Default="test1111@yhaoo.oo" Name="Email" />
-              <Variable x:TypeArguments="x:String" Name="Password">
+              <Variable x:TypeArguments="x:String" Name="Email">
                 <Variable.Default>
-                  <Literal x:TypeArguments="x:String">test12345</Literal>
+                  <Literal x:TypeArguments="x:String">test118998@yahoo.com</Literal>
                 </Variable.Default>
               </Variable>
+              <Variable x:TypeArguments="x:String" Default="test12345" Name="Password" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Registeration Button" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CvTextArgument="Registration" DesignTimeRectangle="0, 0, 0, 0" FuzzySelectorArgument="&lt;html app='chrome.exe' title='Register for free in minutes on Jobstoday.world' /&gt;&lt;webctrl aaname='Registration' idx='2' /&gt;" Guid="c4d21710-9099-4c82-bb84-b5c06d1c992c" SearchSteps="FuzzySelector, CV" Visibility="Interactive" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select &quot;I am an Employer&quot;" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CvTextArgument="I'm an Employer" DesignTimeRectangle="0, 0, 0, 0" FuzzySelectorArgument="&lt;html app='chrome.exe' title='Register for free in minutes on Jobstoday.world' /&gt;&lt;webctrl aaname='I’m an Employer' tag='H3' /&gt;" Guid="de9b23d8-4ade-4d76-a4bd-fc54ea794a17" SearchSteps="FuzzySelector, CV" Visibility="Visible" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NSetText DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_1" Version="V3">
+            <uix:NSetText DisplayName="Enter Email" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='1' /&gt;" Guid="f9eada29-fc62-4558-9f73-98486bdebd1d" SearchSteps="Selector" />
               </uix:NSetText.Target>
@@ -148,7 +148,7 @@
                 </InArgument>
               </uix:NSetText.Text>
             </uix:NSetText>
-            <uix:NSetText DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_2" Version="V3">
+            <uix:NSetText DisplayName="Enter Password" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_2" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='2' /&gt;" Guid="614323e2-f6db-4206-a2e6-96c109f56a5e" SearchSteps="Selector" />
               </uix:NSetText.Target>
@@ -158,41 +158,125 @@
                 </InArgument>
               </uix:NSetText.Text>
             </uix:NSetText>
-            <uix:NSetText DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_3" Text="Company Name" Version="V3">
+            <uix:NSetText DisplayName="Enter Company Name" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_3" Text="Company Name" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='3' /&gt;" Guid="a8f5559d-13a5-4a80-8aa6-a579c6e2619a" SearchSteps="Selector" />
               </uix:NSetText.Target>
             </uix:NSetText>
-            <uix:NSetText DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_4" Text="First Name" Version="V3">
+            <uix:NSelectItem DisplayName="Select Profile Type" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Employer" Version="V3">
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl aria-role='textbox' class='select2-selection__rendered' idx='1' /&gt;" Guid="4d34e0c1-a56a-4718-988b-1f7a9f8ad0c8" SearchSteps="Selector" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Industry " sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Accounting" Version="V3">
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl aria-role='textbox' class='select2-selection__rendered' idx='2' /&gt;" Guid="796ab303-68ae-4401-80b9-a1da269e544e" SearchSteps="Selector" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Salutation " sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="Mr." Version="V3">
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl aria-role='textbox' idx='3' /&gt;" Guid="f94d5eb3-eaa8-46e4-9741-f022cca1a3d6" SearchSteps="Selector" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSetText DisplayName="Enter First Name" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_4" Text="First Name" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='4' /&gt;" Guid="9cff461f-35af-438e-97a7-754f9c878c54" SearchSteps="Selector" />
               </uix:NSetText.Target>
             </uix:NSetText>
-            <uix:NSetText DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_5" Text="Last Name" Version="V3">
+            <uix:NSetText DisplayName="Enter Last Name" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_5" Text="Last Name" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='5' /&gt;" Guid="102e77f7-a8f9-4000-9299-24b7382a0411" SearchSteps="Selector" />
               </uix:NSetText.Target>
             </uix:NSetText>
-            <uix:NSetText DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_6" Text="Address" Version="V3">
+            <uix:NSetText DisplayName="Enter Address" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_6" Text="Address" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='6' /&gt;" Guid="d98e7a3e-8a6e-4b62-8d92-f6a094bae75f" SearchSteps="Selector" />
               </uix:NSetText.Target>
             </uix:NSetText>
-            <uix:NSetText DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_7" Text="Cairo, Egypt" Version="V3">
+            <uix:NSetText DisplayName="Enter Location" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_7" Text="Cairo, Egypt" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='7' /&gt;" Guid="b9fba95d-0153-4b74-9a52-675330d2277e" SearchSteps="Selector" />
               </uix:NSetText.Target>
             </uix:NSetText>
-            <uix:NSetText DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_8" Text="Postal Code" Version="V3">
+            <uix:NSetText DisplayName="Enter Postal Code" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_8" Text="123456" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='8' /&gt;" Guid="0b610a97-a85b-46e1-86ff-2ac75ce29d1e" SearchSteps="Selector" />
               </uix:NSetText.Target>
             </uix:NSetText>
             <uix:NSetText DisplayName="Enter Phone Number" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_9" Text="0123456789" Version="V3">
               <uix:NSetText.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='INPUT' idx='8' /&gt;" Guid="1413625b-9692-4bcc-9a39-69641d947ef4" SearchSteps="Selector" />
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl name='input_phone_number' tag='INPUT' class='input-field' /&gt;" Guid="1413625b-9692-4bcc-9a39-69641d947ef4" SearchSteps="Selector" />
               </uix:NSetText.Target>
             </uix:NSetText>
+            <uix:NSelectItem DisplayName="Select Communication language" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="English" Version="V3">
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl aria-role='textbox' idx='4' /&gt;" Guid="007c54bd-f3bc-4ef8-98a4-f3604a3b180b" SearchSteps="Selector" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Number of employees" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="1-10" Version="V3">
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl aria-role='textbox' idx='5' /&gt;" Guid="be506775-43c3-4cfa-aaa4-1cb5d5acc4e2" SearchSteps="Selector" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="388,257" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+              <uix:NMouseScroll.SearchedElement>
+                <uix:SearchedElement>
+                  <uix:SearchedElement.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl id='btn-card-verify' tag='BUTTON' /&gt;" Guid="81308cd3-ea5d-41f8-9577-14a8c7a340a4" SearchSteps="Selector" />
+                  </uix:SearchedElement.Target>
+                  <uix:SearchedElement.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:SearchedElement.Timeout>
+                </uix:SearchedElement>
+              </uix:NMouseScroll.SearchedElement>
+              <uix:NMouseScroll.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl id='btn-card-verify' tag='BUTTON' /&gt;" Guid="e7dfcadd-e5ad-493e-9ab2-c0cc6cd80c4e" SearchSteps="Selector" />
+              </uix:NMouseScroll.Target>
+            </uix:NMouseScroll>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Captcha" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aria-role='presentation' tag='DIV' /&gt;" Guid="fee0a080-3909-40d9-860b-29b5a6ce2e75" SearchSteps="Selector" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Terms and Conditions" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl id='privacy' tag='INPUT' /&gt;" Guid="72261750-adaa-4a36-8969-ca8db3990de6" SearchSteps="Selector" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click on Register button" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Employer Registration Jobstoday.world - Create free account' /&gt;&lt;webctrl id='btn-card-verify' tag='BUTTON' /&gt;" Guid="f49c422b-a96b-4ff9-86f6-f95217c6ae44" SearchSteps="Selector" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="&quot;Jobs for everyone everywhere&quot;" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;&lt;webctrl tag='H1' /&gt;" Guid="8caa921c-00a8-4aba-bbcc-61f299aaf690" SearchSteps="Selector" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on profile" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;&lt;webctrl src='/assets/images/icon/user.svg' tag='IMG' /&gt;" Guid="2672715f-d88d-4a11-8974-36641d241be2" SearchSteps="Selector" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Hover on" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobstoday' /&gt;&lt;webctrl isleaf='1' tag='DIV' idx='10' /&gt;" Guid="8a91ef68-7bd6-497f-bb8c-97599ed93397" SearchSteps="Selector" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to logout" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="376787fc-031b-4d12-88dd-a63b9e313d75" SearchSteps="Selector" />
+              </uix:NClick.Target>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -200,7 +284,7 @@
         <uix:TargetApp Area="0, 0, 0, 0" Selector="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;" Title="Jobs Search, Search for a Job - Jobstoday.world">
           <uix:TargetApp.Url>
             <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">GlobalVariablesNamespace.GlobalVariables.Production_URL</CSharpValue>
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">GlobalVariablesNamespace.GlobalVariables.Production_URL</CSharpValue>
             </InArgument>
           </uix:TargetApp.Url>
         </uix:TargetApp>

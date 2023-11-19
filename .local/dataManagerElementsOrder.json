@@ -3,7 +3,9 @@
     {
       "Path": null,
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "Production_URL&"
+      ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -12,6 +14,18 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RegisterTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Production_URL&Sequence_8",
+        "Email&Sequence_7",
+        "Password&Sequence_7"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
