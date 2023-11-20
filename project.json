@@ -57,6 +57,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "RegisterTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2bafa4f6-3851-4b06-9cb3-ed5bab784f47",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Logout TestCase.xaml"
       }
     ],
     "modernBehavior": true,
