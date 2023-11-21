@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Login" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="824,2797" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Login" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="886,4210" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -38,6 +38,7 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -96,37 +97,37 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="834,2732" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="896,4145" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="772,2621" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="834,4034" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="738,2534" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="800,3947" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="676,2423" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Data\\LoginData.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="738,3836" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Data\\LoginData.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="642,2154" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,3567" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="580,2043" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="642,3456" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
                       <ueab:ExcelForEachRowX.Body>
                         <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                           <ActivityAction.Argument1>
@@ -135,30 +136,30 @@
                           <ActivityAction.Argument2>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           </ActivityAction.Argument2>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,1853" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,3266" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Jobs Today - Login" sap:VirtualizedContainerService.HintSize="484,1742" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="35e455f2-2166-4689-a659-ab71c0fbf103" Version="V2">
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Jobs Today - Login" sap:VirtualizedContainerService.HintSize="546,3155" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="35e455f2-2166-4689-a659-ab71c0fbf103" Version="V2">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1525" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,2938" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Login" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Login" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;&lt;webctrl aaname='Login' tag='A' idx='2' /&gt;" Guid="9516fd9b-055e-4afb-ba61-0e06ecf6c345" SearchSteps="Selector" />
                                       </uix:NClick.Target>
                                     </uix:NClick>
-                                    <uix:NSetText DisplayName="Enter Email" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_1" Version="V3">
+                                    <uix:NSetText DisplayName="Enter Email" sap:VirtualizedContainerService.HintSize="450,162" sap2010:WorkflowViewState.IdRef="NSetText_1" Version="V3">
                                       <uix:NSetText.Target>
                                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;&lt;webctrl id='login_email' tag='INPUT' /&gt;" Guid="8d0ce04e-6062-44e9-9fcd-71287cb1a8d6" SearchSteps="Selector" />
                                       </uix:NSetText.Target>
@@ -168,7 +169,7 @@
                                         </InArgument>
                                       </uix:NSetText.Text>
                                     </uix:NSetText>
-                                    <uix:NSetText DisplayName="Enter Password" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_2" Version="V3">
+                                    <uix:NSetText DisplayName="Enter Password" sap:VirtualizedContainerService.HintSize="450,162" sap2010:WorkflowViewState.IdRef="NSetText_2" Version="V3">
                                       <uix:NSetText.Target>
                                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;&lt;webctrl id='login_password' tag='INPUT' /&gt;" Guid="c5b3756c-c37a-478e-8c8e-619f6d5f76af" SearchSteps="Selector" />
                                       </uix:NSetText.Target>
@@ -178,7 +179,7 @@
                                         </InArgument>
                                       </uix:NSetText.Text>
                                     </uix:NSetText>
-                                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="388,257" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="450,257" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
                                       <uix:NMouseScroll.SearchedElement>
                                         <uix:SearchedElement>
                                           <uix:SearchedElement.Target>
@@ -193,12 +194,12 @@
                                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;&lt;webctrl id='btn-card-verify' tag='BUTTON' /&gt;" Guid="e7dfcadd-e5ad-493e-9ab2-c0cc6cd80c4e" SearchSteps="Selector" />
                                       </uix:NMouseScroll.Target>
                                     </uix:NMouseScroll>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Captcha" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Captcha" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aria-role='presentation' tag='DIV' /&gt;" Guid="fee0a080-3909-40d9-860b-29b5a6ce2e75" SearchSteps="Selector" />
                                       </uix:NClick.Target>
                                     </uix:NClick>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click on Login button" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click on Login button" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;&lt;webctrl id='btn-card-verify' tag='BUTTON' /&gt;" Guid="f49c422b-a96b-4ff9-86f6-f95217c6ae44" SearchSteps="Selector" />
                                       </uix:NClick.Target>
@@ -216,18 +217,71 @@
                                         </uix:VerifyExecutionOptions>
                                       </uix:NClick.VerifyOptions>
                                     </uix:NClick>
-                                    <uix:NNavigateBrowser Action="GoHome" DisplayName="Navigate Browser - Go Home" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" />
+                                    <Sequence DisplayName="Delete Account after Login" sap:VirtualizedContainerService.HintSize="450,1495" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Account icon" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;&lt;webctrl src='/assets/images/icon/user.svg' tag='IMG' /&gt;" Guid="766fa536-9070-4f04-861c-9a5d469cd607" SearchSteps="Selector" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Settings" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobstoday' /&gt;&lt;webctrl class='b-nav__text' tag='SPAN' idx='7' /&gt;" Guid="46b6c91e-8350-4a31-acfe-0155851ffb62" SearchSteps="Selector" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Delete Button" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobstoday' /&gt;&lt;webctrl parentid='page_content' tag='BUTTON' idx='3' /&gt;" Guid="7db2fe66-6d37-4904-96c6-65d4ba28e397" SearchSteps="Selector" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Confirm Delete" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobstoday' /&gt;&lt;webctrl parentid='page_content' tag='A' /&gt;" Guid="f9543c64-d999-4779-b277-b353bdba9be1" SearchSteps="Selector" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Yes" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='jobstoday.world/en/company-panel/deleteAccount' /&gt;&lt;webctrl tag='BUTTON' idx='2' /&gt;" Guid="ebdfd80d-e23f-4f8c-ba63-c9150c7be59f" SearchSteps="Selector" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NSetText DisplayName="Enter Password to Delete" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_4" Version="V3">
+                                        <uix:NSetText.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='jobstoday.world/en/company-panel/deleteAccount' /&gt;&lt;webctrl id='current_password' tag='INPUT' /&gt;" Guid="9ae33188-a58c-47b0-bb66-f1c3660c4ccf" SearchSteps="Selector" />
+                                        </uix:NSetText.Target>
+                                        <uix:NSetText.Text>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">CurrentRow.ByField["Password"]</CSharpValue>
+                                          </InArgument>
+                                        </uix:NSetText.Text>
+                                      </uix:NSetText>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Delete button" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='jobstoday.world/en/company-panel/deleteAccount' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="00ae3024-8f8a-4be4-ba01-6b310f10a52c" SearchSteps="Selector" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Target>
+                                              <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='jobstoday.world/en/deleteConfirm/' /&gt;&lt;webctrl tag='H3' /&gt;" Guid="b1180449-cd43-4bd0-b82e-1ba2980b8851" SearchSteps="Selector" WaitForReadyArgument="Complete" />
+                                            </uix:VerifyExecutionOptions.Target>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                    </Sequence>
                                   </Sequence>
                                 </ActivityAction>
                               </uix:NApplicationCard.Body>
                               <uix:NApplicationCard.TargetApp>
-                                <uix:TargetApp Area="0, 0, 0, 0" Selector="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;" Title="Jobs Search, Search for a Job - Jobstoday.world">
-                                  <uix:TargetApp.Url>
-                                    <InArgument x:TypeArguments="x:String">
-                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">GlobalVariablesNamespace.GlobalVariables.Production_URL</CSharpValue>
-                                    </InArgument>
-                                  </uix:TargetApp.Url>
-                                </uix:TargetApp>
+                                <uix:TargetApp Area="0, 0, 0, 0" Selector="&lt;html app='chrome.exe' url='https://www.jobstoday.world/en' /&gt;" Title="Jobs Search, Search for a Job - Jobstoday.world" Url="https://www.jobstoday.world/en" />
                               </uix:NApplicationCard.TargetApp>
                             </uix:NApplicationCard>
                           </Sequence>
