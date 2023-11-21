@@ -4,6 +4,8 @@
       "Path": null,
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "Email&",
+        "Password&",
         "Production_URL&"
       ],
       "ArgumentsSectionElementsOrder": null,
@@ -13,7 +15,14 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "Production_URL&Sequence_2",
+        "Email&Sequence_2",
+        "Password&Sequence_2",
+        "Production_URL&Sequence_3",
+        "Email&Sequence_3",
+        "Password&Sequence_3"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -25,6 +34,30 @@
         "Production_URL&Sequence_8",
         "Email&Sequence_7",
         "Password&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Clear Session.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Production_URL&Sequence_2",
+        "Email&Sequence_2",
+        "Password&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LoginTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Production_URL&Sequence_2",
+        "Email&Sequence_2",
+        "Password&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

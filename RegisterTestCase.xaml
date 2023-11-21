@@ -109,13 +109,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Jobs Today - Register as an Employer" sap:VirtualizedContainerService.HintSize="484,4543" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Jobs Today - Register as an Employer" sap:VirtualizedContainerService.HintSize="484,4541" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,4326" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,4324" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -123,7 +123,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Registeration Button" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CvTextArgument="Registration" DesignTimeRectangle="0, 0, 0, 0" FuzzySelectorArgument="&lt;html app='chrome.exe' title='Register for free in minutes on Jobstoday.world' /&gt;&lt;webctrl aaname='Registration' idx='2' /&gt;" Guid="c4d21710-9099-4c82-bb84-b5c06d1c992c" SearchSteps="FuzzySelector, CV" Visibility="Interactive" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable CvTextArgument="Registration" DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;&lt;webctrl aaname='Registration' tag='A' idx='2' /&gt;" Guid="c4d21710-9099-4c82-bb84-b5c06d1c992c" SearchSteps="Selector, CV" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select &quot;I am an Employer&quot;" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28cf7ac8-fc00-4637-9497-aefcdfcb41d1" Version="V3">
